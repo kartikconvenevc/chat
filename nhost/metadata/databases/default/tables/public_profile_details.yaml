@@ -1,0 +1,79 @@
+table:
+  name: profile_details
+  schema: public
+object_relationships:
+  - name: userdata
+    using:
+      manual_configuration:
+        column_mapping:
+          user_id: id
+        insertion_order: null
+        remote_table:
+          name: users
+          schema: auth
+insert_permissions:
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - orgn_id
+        - id
+        - birthday
+        - address1
+        - address2
+        - bio
+        - category
+        - city
+        - country
+        - first_name
+        - last_name
+        - postcode
+        - state
+        - user_id
+    comment: ""
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - orgn_id
+        - id
+        - birthday
+        - address1
+        - address2
+        - bio
+        - category
+        - city
+        - country
+        - first_name
+        - last_name
+        - postcode
+        - state
+        - user_id
+      filter: {}
+    comment: ""
+update_permissions:
+  - role: user
+    permission:
+      columns:
+        - orgn_id
+        - id
+        - birthday
+        - address1
+        - address2
+        - bio
+        - category
+        - city
+        - country
+        - first_name
+        - last_name
+        - postcode
+        - state
+        - user_id
+      filter: {}
+      check: {}
+    comment: ""
+delete_permissions:
+  - role: user
+    permission:
+      filter: {}
+    comment: ""

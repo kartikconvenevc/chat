@@ -1,0 +1,1 @@
+CREATE TABLE "public"."profile_details" ("id" bigserial NOT NULL, "first_name" Text, "last_name" text, "state" text, "city" text, "country" text, "bio" text, "address1" text, "address2" text, "birthday" date, "postcode" text, "category" text, "user_id" uuid, "orgn_id" text[], PRIMARY KEY ("id") );
