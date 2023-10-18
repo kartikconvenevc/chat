@@ -1,0 +1,1 @@
+CREATE TABLE "public"."group_chatn" ("id" bigserial NOT NULL, "group_id" bigint, "sender_id" uuid, "timestamp" timestamptz, "replying_to" uuid, "type" text, "content" text, "notification" text, "participent" uuid, "status" text, PRIMARY KEY ("id") );
