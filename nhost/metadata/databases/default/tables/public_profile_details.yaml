@@ -12,6 +12,25 @@ object_relationships:
           name: users
           schema: auth
 insert_permissions:
+  - role: public
+    permission:
+      check: {}
+      columns:
+        - orgn_id
+        - id
+        - birthday
+        - address1
+        - address2
+        - bio
+        - category
+        - city
+        - country
+        - first_name
+        - last_name
+        - postcode
+        - state
+        - user_id
+    comment: ""
   - role: user
     permission:
       check: {}
@@ -32,6 +51,25 @@ insert_permissions:
         - user_id
     comment: ""
 select_permissions:
+  - role: public
+    permission:
+      columns:
+        - orgn_id
+        - id
+        - birthday
+        - address1
+        - address2
+        - bio
+        - category
+        - city
+        - country
+        - first_name
+        - last_name
+        - postcode
+        - state
+        - user_id
+      filter: {}
+    comment: ""
   - role: user
     permission:
       columns:
@@ -52,6 +90,26 @@ select_permissions:
       filter: {}
     comment: ""
 update_permissions:
+  - role: public
+    permission:
+      columns:
+        - orgn_id
+        - id
+        - birthday
+        - address1
+        - address2
+        - bio
+        - category
+        - city
+        - country
+        - first_name
+        - last_name
+        - postcode
+        - state
+        - user_id
+      filter: {}
+      check: {}
+    comment: ""
   - role: user
     permission:
       columns:
@@ -73,6 +131,10 @@ update_permissions:
       check: {}
     comment: ""
 delete_permissions:
+  - role: public
+    permission:
+      filter: {}
+    comment: ""
   - role: user
     permission:
       filter: {}
