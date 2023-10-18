@@ -2,6 +2,15 @@ table:
   name: profile_details
   schema: public
 object_relationships:
+  - name: orgnisationdetail
+    using:
+      manual_configuration:
+        column_mapping:
+          orgn_id: orgn_id
+        insertion_order: null
+        remote_table:
+          name: organisation_master
+          schema: public
   - name: userdata
     using:
       manual_configuration:
