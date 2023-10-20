@@ -10,6 +10,7 @@
 - "!include public_group_chatn.yaml"
 - "!include public_organisation_master.yaml"
 - "!include public_profile_details.yaml"
+- "!include public_user_groups.yaml"
 - "!include storage_buckets.yaml"
 - "!include storage_files.yaml"
 - "!include storage_virus.yaml"
