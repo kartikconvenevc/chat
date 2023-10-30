@@ -25,18 +25,19 @@ insert_permissions:
     permission:
       check: {}
       columns:
-        - orgn_id
-        - id
-        - birthday
         - address1
         - address2
         - bio
+        - birthday
         - category
         - city
         - country
         - first_name
+        - id
         - last_name
+        - orgn_id
         - postcode
+        - sdp_id
         - state
         - user_id
     comment: ""
@@ -44,18 +45,19 @@ insert_permissions:
     permission:
       check: {}
       columns:
-        - orgn_id
-        - id
-        - birthday
         - address1
         - address2
         - bio
+        - birthday
         - category
         - city
         - country
         - first_name
+        - id
         - last_name
+        - orgn_id
         - postcode
+        - sdp_id
         - state
         - user_id
     comment: ""
@@ -63,18 +65,19 @@ select_permissions:
   - role: public
     permission:
       columns:
-        - orgn_id
-        - id
-        - birthday
         - address1
         - address2
         - bio
+        - birthday
         - category
         - city
         - country
         - first_name
+        - id
         - last_name
+        - orgn_id
         - postcode
+        - sdp_id
         - state
         - user_id
       filter: {}
@@ -82,18 +85,19 @@ select_permissions:
   - role: user
     permission:
       columns:
-        - orgn_id
-        - id
-        - birthday
         - address1
         - address2
         - bio
+        - birthday
         - category
         - city
         - country
         - first_name
+        - id
         - last_name
+        - orgn_id
         - postcode
+        - sdp_id
         - state
         - user_id
       filter: {}
@@ -102,18 +106,19 @@ update_permissions:
   - role: public
     permission:
       columns:
-        - orgn_id
-        - id
-        - birthday
         - address1
         - address2
         - bio
+        - birthday
         - category
         - city
         - country
         - first_name
+        - id
         - last_name
+        - orgn_id
         - postcode
+        - sdp_id
         - state
         - user_id
       filter: {}
@@ -122,18 +127,19 @@ update_permissions:
   - role: user
     permission:
       columns:
-        - orgn_id
-        - id
-        - birthday
         - address1
         - address2
         - bio
+        - birthday
         - category
         - city
         - country
         - first_name
+        - id
         - last_name
+        - orgn_id
         - postcode
+        - sdp_id
         - state
         - user_id
       filter: {}
