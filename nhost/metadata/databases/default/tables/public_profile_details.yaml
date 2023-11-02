@@ -37,6 +37,7 @@ insert_permissions:
         - last_name
         - orgn_id
         - postcode
+        - sdp
         - sdp_id
         - state
         - status
@@ -58,6 +59,7 @@ insert_permissions:
         - last_name
         - orgn_id
         - postcode
+        - sdp
         - sdp_id
         - state
         - status
@@ -79,6 +81,7 @@ select_permissions:
         - last_name
         - orgn_id
         - postcode
+        - sdp
         - sdp_id
         - state
         - status
@@ -100,6 +103,7 @@ select_permissions:
         - last_name
         - orgn_id
         - postcode
+        - sdp
         - sdp_id
         - state
         - status
@@ -122,6 +126,7 @@ update_permissions:
         - last_name
         - orgn_id
         - postcode
+        - sdp
         - sdp_id
         - state
         - status
@@ -144,6 +149,7 @@ update_permissions:
         - last_name
         - orgn_id
         - postcode
+        - sdp
         - sdp_id
         - state
         - status
