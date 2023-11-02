@@ -39,6 +39,7 @@ insert_permissions:
         - postcode
         - sdp_id
         - state
+        - status
         - user_id
     comment: ""
   - role: user
@@ -59,6 +60,7 @@ insert_permissions:
         - postcode
         - sdp_id
         - state
+        - status
         - user_id
     comment: ""
 select_permissions:
@@ -79,6 +81,7 @@ select_permissions:
         - postcode
         - sdp_id
         - state
+        - status
         - user_id
       filter: {}
     comment: ""
@@ -99,6 +102,7 @@ select_permissions:
         - postcode
         - sdp_id
         - state
+        - status
         - user_id
       filter: {}
     comment: ""
@@ -120,6 +124,7 @@ update_permissions:
         - postcode
         - sdp_id
         - state
+        - status
         - user_id
       filter: {}
       check: {}
@@ -141,6 +146,7 @@ update_permissions:
         - postcode
         - sdp_id
         - state
+        - status
         - user_id
       filter: {}
       check: {}
