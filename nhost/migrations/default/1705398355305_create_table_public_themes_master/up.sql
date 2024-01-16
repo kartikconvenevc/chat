@@ -1,0 +1,1 @@
+CREATE TABLE "public"."themes_master" ("id" bigserial NOT NULL, "name" text, "orgn_id" bigint, "background_color" text DEFAULT ' #F0EBF6', "foreground_color" text DEFAULT '#FFFFFF', PRIMARY KEY ("id") );

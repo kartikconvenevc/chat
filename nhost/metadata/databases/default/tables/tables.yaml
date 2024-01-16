@@ -13,6 +13,7 @@
 - "!include public_notification_master.yaml"
 - "!include public_organisation_master.yaml"
 - "!include public_profile_details.yaml"
+- "!include public_themes_master.yaml"
 - "!include public_user_groups.yaml"
 - "!include storage_buckets.yaml"
 - "!include storage_files.yaml"

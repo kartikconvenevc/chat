@@ -1,0 +1,13 @@
+table:
+  name: themes_master
+  schema: public
+object_relationships:
+  - name: orgnisationdetail
+    using:
+      manual_configuration:
+        column_mapping:
+          orgn_id: id
+        insertion_order: null
+        remote_table:
+          name: organisation_master
+          schema: public
