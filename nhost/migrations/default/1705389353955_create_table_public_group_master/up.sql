@@ -1,0 +1,1 @@
+CREATE TABLE "public"."group_master" ("id" bigserial NOT NULL, "groupname" text, "created_user_id" uuid, "created_at" timestamptz, "orgn_id" int8, "status" text DEFAULT 'active', PRIMARY KEY ("id") );

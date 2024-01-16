@@ -1,0 +1,1 @@
+CREATE TABLE "public"."notification_master" ("id" bigserial NOT NULL, "created_at" timestamptz, "user_id" int8, "title" text, "description" text, "seen" Text NOT NULL, "action" text, PRIMARY KEY ("id") );

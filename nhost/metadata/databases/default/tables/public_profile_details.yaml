@@ -6,7 +6,7 @@ object_relationships:
     using:
       manual_configuration:
         column_mapping:
-          orgn_id: orgn_id
+          orgn_id: id
         insertion_order: null
         remote_table:
           name: organisation_master
@@ -29,7 +29,7 @@ insert_permissions:
         - address2
         - bio
         - birthday
-        - category
+        - role
         - city
         - country
         - first_name
@@ -51,7 +51,7 @@ insert_permissions:
         - address2
         - bio
         - birthday
-        - category
+        - role
         - city
         - country
         - first_name
@@ -73,7 +73,7 @@ select_permissions:
         - address2
         - bio
         - birthday
-        - category
+        - role
         - city
         - country
         - first_name
@@ -95,7 +95,7 @@ select_permissions:
         - address2
         - bio
         - birthday
-        - category
+        - role
         - city
         - country
         - first_name
@@ -118,7 +118,7 @@ update_permissions:
         - address2
         - bio
         - birthday
-        - category
+        - role
         - city
         - country
         - first_name
@@ -141,7 +141,7 @@ update_permissions:
         - address2
         - bio
         - birthday
-        - category
+        - role
         - city
         - country
         - first_name

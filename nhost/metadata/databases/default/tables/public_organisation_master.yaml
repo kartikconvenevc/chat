@@ -6,7 +6,7 @@ insert_permissions:
     permission:
       check: {}
       columns:
-        - orgn_id
+        - id
         - location
         - name
         - subscription
@@ -15,7 +15,7 @@ insert_permissions:
     permission:
       check: {}
       columns:
-        - orgn_id
+        - id
         - location
         - name
         - subscription
@@ -24,7 +24,7 @@ select_permissions:
   - role: public
     permission:
       columns:
-        - orgn_id
+        - id
         - location
         - name
         - subscription
@@ -33,7 +33,7 @@ select_permissions:
   - role: user
     permission:
       columns:
-        - orgn_id
+        - id
         - location
         - name
         - subscription
@@ -43,7 +43,7 @@ update_permissions:
   - role: public
     permission:
       columns:
-        - orgn_id
+        - id
         - location
         - name
         - subscription
@@ -53,7 +53,7 @@ update_permissions:
   - role: user
     permission:
       columns:
-        - orgn_id
+        - id
         - location
         - name
         - subscription

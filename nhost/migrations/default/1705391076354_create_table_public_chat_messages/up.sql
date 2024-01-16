@@ -1,0 +1,1 @@
+CREATE TABLE "public"."chat_messages" ("id" bigserial NOT NULL, "group_id" int8, "user_id" uuid, "message" text, "file_url" text, "type" text, "status" text, "created_at" timestamptz NOT NULL DEFAULT now(), PRIMARY KEY ("id") );
