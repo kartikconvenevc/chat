@@ -101,7 +101,7 @@ enabled = false
 enabled = false
 
 [auth.method.oauth.google]
-enabled = true
+enabled = false
 
 [auth.method.oauth.linkedin]
 enabled = false
