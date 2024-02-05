@@ -3,7 +3,7 @@ import nodemailer from "nodemailer"
 export default async (req, res) => {
   // Only needed if you don't have a real mail account for testing
 //   let testAccount = await nodemailer.createTestAccount()
-console.log("the api is get called :",req.body.emailid)
+console.log("the api is get called :",req.body)
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
@@ -21,8 +21,8 @@ console.log("the api is get called :",req.body.emailid)
     from: "prasanna@convenevc.com", // sender address
     to: req.body.emailid, // list of receivers
     subject: "Hello this is our first", // Subject line
-    text: "Hello world?", // plain text body
-    html: "<b>Hello world we done it</b>" // html body
+    text: `Hello world? `, // plain text body
+    html: `<b>The otp for the verification is ${req.body.emailotp} . Please enter this in app to verify this will valid till 2 minutes only </b>` // html body
   })
 
   console.log("Message sent: %s", info.messageId)
