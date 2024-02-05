@@ -20,9 +20,9 @@ console.log("the api is get called :",req.body)
   let info = await transporter.sendMail({
     from: "prasanna@convenevc.com", // sender address
     to: req.body.emailid, // list of receivers
-    subject: "Hello this is our first", // Subject line
+    subject: "Email verification for Conevene Chat Application.", // Subject line
     text: `Hello world? `, // plain text body
-    html: `<b>The otp for the verification is ${req.body.emailotp} . Please enter this in app to verify this will valid till 2 minutes only </b>` // html body
+    html: `<p>The otp for the verification is <b>${req.body.emailotp} </b>. Please enter this in app to verify this will valid till 2 minutes only </p>` // html body
   })
 
   console.log("Message sent: %s", info.messageId)
