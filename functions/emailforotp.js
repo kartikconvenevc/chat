@@ -3,7 +3,7 @@ import nodemailer from "nodemailer"
 export default async (req, res) => {
   // Only needed if you don't have a real mail account for testing
 //   let testAccount = await nodemailer.createTestAccount()
-console.log("the api is get called :")
+console.log("the api is get called :",req)
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
