@@ -22,7 +22,7 @@ console.log("the api is get called :",req.body)
     to: req.body.emailid, // list of receivers
     subject: "Email verification for Conevene Chat Application.", // Subject line
     text: `Hello world? `, // plain text body
-    html: `<p>The otp for the verification is <b>${req.body.emailotp} </b>. Please enter this in app to verify this will valid till 2 minutes only </p>` // html body
+    html: `<p>The otp for the verification is <b>${req.body.emailotp} </b>. Please enter this in app to verify.Thank you! </p>` // html body
   })
 
   console.log("Message sent: %s", info.messageId)
