@@ -25,20 +25,21 @@ insert_permissions:
     permission:
       check: {}
       columns:
+        - orgn_id
+        - id
+        - birthday
+        - sdp_id
         - address1
         - address2
         - bio
-        - birthday
-        - role
         - city
         - country
+        - custom_username
         - first_name
-        - id
         - last_name
-        - orgn_id
         - postcode
+        - role
         - sdp
-        - sdp_id
         - state
         - status
         - user_id
@@ -47,20 +48,21 @@ insert_permissions:
     permission:
       check: {}
       columns:
+        - orgn_id
+        - id
+        - birthday
+        - sdp_id
         - address1
         - address2
         - bio
-        - birthday
-        - role
         - city
         - country
+        - custom_username
         - first_name
-        - id
         - last_name
-        - orgn_id
         - postcode
+        - role
         - sdp
-        - sdp_id
         - state
         - status
         - user_id
@@ -73,14 +75,15 @@ select_permissions:
         - address2
         - bio
         - birthday
-        - role
         - city
         - country
+        - custom_username
         - first_name
         - id
         - last_name
         - orgn_id
         - postcode
+        - role
         - sdp
         - sdp_id
         - state
@@ -95,14 +98,15 @@ select_permissions:
         - address2
         - bio
         - birthday
-        - role
         - city
         - country
+        - custom_username
         - first_name
         - id
         - last_name
         - orgn_id
         - postcode
+        - role
         - sdp
         - sdp_id
         - state
@@ -118,14 +122,15 @@ update_permissions:
         - address2
         - bio
         - birthday
-        - role
         - city
         - country
+        - custom_username
         - first_name
         - id
         - last_name
         - orgn_id
         - postcode
+        - role
         - sdp
         - sdp_id
         - state
@@ -141,14 +146,15 @@ update_permissions:
         - address2
         - bio
         - birthday
-        - role
         - city
         - country
+        - custom_username
         - first_name
         - id
         - last_name
         - orgn_id
         - postcode
+        - role
         - sdp
         - sdp_id
         - state
