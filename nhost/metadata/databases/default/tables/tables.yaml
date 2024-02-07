@@ -15,6 +15,7 @@
 - "!include public_profile_details.yaml"
 - "!include public_themes_master.yaml"
 - "!include public_user_groups.yaml"
+- "!include public_user_organisations.yaml"
 - "!include storage_buckets.yaml"
 - "!include storage_files.yaml"
 - "!include storage_virus.yaml"
