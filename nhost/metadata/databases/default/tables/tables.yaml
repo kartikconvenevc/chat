@@ -10,6 +10,7 @@
 - "!include public_chat_messages.yaml"
 - "!include public_group_chatn.yaml"
 - "!include public_group_master.yaml"
+- "!include public_group_usermapping.yaml"
 - "!include public_notification_master.yaml"
 - "!include public_organisation_master.yaml"
 - "!include public_profile_details.yaml"
