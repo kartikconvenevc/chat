@@ -25,21 +25,22 @@ insert_permissions:
     permission:
       check: {}
       columns:
-        - orgn_id
-        - id
-        - birthday
-        - sdp_id
         - address1
         - address2
         - bio
+        - birthday
         - city
         - country
         - custom_username
         - first_name
+        - id
         - last_name
+        - orgn_id
+        - phonenumber
         - postcode
         - role
         - sdp
+        - sdp_id
         - state
         - status
         - user_id
@@ -60,6 +61,7 @@ insert_permissions:
         - custom_username
         - first_name
         - last_name
+        - phonenumber
         - postcode
         - role
         - sdp
@@ -71,21 +73,22 @@ select_permissions:
   - role: public
     permission:
       columns:
+        - orgn_id
+        - id
+        - birthday
+        - sdp_id
         - address1
         - address2
         - bio
-        - birthday
         - city
         - country
         - custom_username
         - first_name
-        - id
         - last_name
-        - orgn_id
+        - phonenumber
         - postcode
         - role
         - sdp
-        - sdp_id
         - state
         - status
         - user_id
@@ -94,21 +97,22 @@ select_permissions:
   - role: user
     permission:
       columns:
+        - orgn_id
+        - id
+        - birthday
+        - sdp_id
         - address1
         - address2
         - bio
-        - birthday
         - city
         - country
         - custom_username
         - first_name
-        - id
         - last_name
-        - orgn_id
+        - phonenumber
         - postcode
         - role
         - sdp
-        - sdp_id
         - state
         - status
         - user_id
@@ -118,21 +122,22 @@ update_permissions:
   - role: public
     permission:
       columns:
+        - orgn_id
+        - id
+        - birthday
+        - sdp_id
         - address1
         - address2
         - bio
-        - birthday
         - city
         - country
         - custom_username
         - first_name
-        - id
         - last_name
-        - orgn_id
+        - phonenumber
         - postcode
         - role
         - sdp
-        - sdp_id
         - state
         - status
         - user_id
@@ -142,21 +147,22 @@ update_permissions:
   - role: user
     permission:
       columns:
+        - orgn_id
+        - id
+        - birthday
+        - sdp_id
         - address1
         - address2
         - bio
-        - birthday
         - city
         - country
         - custom_username
         - first_name
-        - id
         - last_name
-        - orgn_id
+        - phonenumber
         - postcode
         - role
         - sdp
-        - sdp_id
         - state
         - status
         - user_id
