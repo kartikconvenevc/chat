@@ -18,6 +18,7 @@ insert_permissions:
       columns:
         - group_id
         - id
+        - orgn_id
         - status
         - userid
     comment: ""
@@ -27,6 +28,7 @@ select_permissions:
       columns:
         - group_id
         - id
+        - orgn_id
         - status
         - userid
       filter: {}
@@ -36,6 +38,7 @@ select_permissions:
       columns:
         - group_id
         - id
+        - orgn_id
         - status
         - userid
       filter: {}
@@ -46,6 +49,7 @@ update_permissions:
       columns:
         - group_id
         - id
+        - orgn_id
         - status
         - userid
       filter: {}
