@@ -15,9 +15,16 @@ insert_permissions:
     permission:
       check: {}
       columns:
+        - employee_count
         - id
+        - tax_number
+        - themes_id
+        - country
         - location
+        - logo_file
         - name
+        - official_website
+        - status
         - subscription
     comment: ""
 select_permissions:
@@ -33,9 +40,16 @@ select_permissions:
   - role: user
     permission:
       columns:
+        - employee_count
         - id
+        - tax_number
+        - themes_id
+        - country
         - location
+        - logo_file
         - name
+        - official_website
+        - status
         - subscription
       filter: {}
     comment: ""
@@ -53,9 +67,16 @@ update_permissions:
   - role: user
     permission:
       columns:
+        - employee_count
         - id
+        - tax_number
+        - themes_id
+        - country
         - location
+        - logo_file
         - name
+        - official_website
+        - status
         - subscription
       filter: {}
       check: {}

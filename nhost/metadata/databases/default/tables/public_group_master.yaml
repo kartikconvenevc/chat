@@ -1,3 +1,40 @@
 table:
   name: group_master
   schema: public
+insert_permissions:
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - id
+        - orgn_id
+        - groupname
+        - status
+        - created_at
+        - created_user_id
+    comment: ""
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - id
+        - orgn_id
+        - groupname
+        - status
+        - created_at
+        - created_user_id
+      filter: {}
+    comment: ""
+update_permissions:
+  - role: user
+    permission:
+      columns:
+        - id
+        - orgn_id
+        - groupname
+        - status
+        - created_at
+        - created_user_id
+      filter: {}
+      check: {}
+    comment: ""

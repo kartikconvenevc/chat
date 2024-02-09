@@ -11,3 +11,40 @@ object_relationships:
         remote_table:
           name: organisation_master
           schema: public
+insert_permissions:
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - id
+        - orgn_id
+        - background_color
+        - foreground_color
+        - name
+        - title_color
+    comment: ""
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - id
+        - orgn_id
+        - background_color
+        - foreground_color
+        - name
+        - title_color
+      filter: {}
+    comment: ""
+update_permissions:
+  - role: user
+    permission:
+      columns:
+        - id
+        - orgn_id
+        - background_color
+        - foreground_color
+        - name
+        - title_color
+      filter: {}
+      check: {}
+    comment: ""
