@@ -10,6 +10,7 @@ insert_permissions:
         - orgn_id
         - groupname
         - groupprofile_img
+        - last_messageingroup
         - status
         - created_at
         - created_user_id
@@ -18,13 +19,14 @@ select_permissions:
   - role: user
     permission:
       columns:
-        - created_at
-        - created_user_id
-        - groupname
-        - groupprofile_img
         - id
         - orgn_id
+        - groupname
+        - groupprofile_img
+        - last_messageingroup
         - status
+        - created_at
+        - created_user_id
       filter: {}
     comment: ""
 update_permissions:
@@ -35,6 +37,7 @@ update_permissions:
         - orgn_id
         - groupname
         - groupprofile_img
+        - last_messageingroup
         - status
         - created_at
         - created_user_id
