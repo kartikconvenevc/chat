@@ -11,6 +11,15 @@ object_relationships:
         remote_table:
           name: group_master
           schema: public
+  - name: senderdata
+    using:
+      manual_configuration:
+        column_mapping:
+          sent_id: id
+        insertion_order: null
+        remote_table:
+          name: users
+          schema: auth
 insert_permissions:
   - role: user
     permission:
