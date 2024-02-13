@@ -47,3 +47,31 @@ array_relationships:
         table:
           name: files
           schema: storage
+insert_permissions:
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - presigned_urls_enabled
+        - download_expiration
+        - max_upload_file_size
+        - min_upload_file_size
+        - cache_control
+        - id
+        - created_at
+        - updated_at
+    comment: ""
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - presigned_urls_enabled
+        - download_expiration
+        - max_upload_file_size
+        - min_upload_file_size
+        - cache_control
+        - id
+        - created_at
+        - updated_at
+      filter: {}
+    comment: ""
