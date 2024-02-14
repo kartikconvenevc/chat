@@ -1,6 +1,25 @@
 table:
   name: group_master
   schema: public
+object_relationships:
+  - name: receiverdata
+    using:
+      manual_configuration:
+        column_mapping:
+          personal_chatid: id
+        insertion_order: null
+        remote_table:
+          name: users
+          schema: auth
+  - name: senderdata
+    using:
+      manual_configuration:
+        column_mapping:
+          created_user_id: id
+        insertion_order: null
+        remote_table:
+          name: users
+          schema: auth
 insert_permissions:
   - role: user
     permission:
@@ -15,6 +34,7 @@ insert_permissions:
         - type
         - created_at
         - created_user_id
+        - personal_chatid
     comment: ""
 select_permissions:
   - role: user
@@ -29,6 +49,7 @@ select_permissions:
         - type
         - created_at
         - created_user_id
+        - personal_chatid
       filter: {}
     comment: ""
 update_permissions:
@@ -44,6 +65,7 @@ update_permissions:
         - type
         - created_at
         - created_user_id
+        - personal_chatid
       filter: {}
       check: {}
     comment: ""
