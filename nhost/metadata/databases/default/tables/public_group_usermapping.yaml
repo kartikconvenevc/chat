@@ -20,6 +20,7 @@ insert_permissions:
         - id
         - orgn_id
         - status
+        - type
         - userid
     comment: ""
 select_permissions:
@@ -40,6 +41,7 @@ select_permissions:
         - id
         - orgn_id
         - status
+        - type
         - userid
       filter: {}
     comment: ""
@@ -51,6 +53,7 @@ update_permissions:
         - id
         - orgn_id
         - status
+        - type
         - userid
       filter: {}
       check: {}
