@@ -6,20 +6,20 @@ object_relationships:
     using:
       manual_configuration:
         column_mapping:
-          personal_chatid: id
+          personal_chatid: user_id
         insertion_order: null
         remote_table:
-          name: users
-          schema: auth
+          name: profile_details
+          schema: public
   - name: senderdata
     using:
       manual_configuration:
         column_mapping:
-          created_user_id: id
+          created_user_id: user_id
         insertion_order: null
         remote_table:
-          name: users
-          schema: auth
+          name: profile_details
+          schema: public
 insert_permissions:
   - role: user
     permission:
