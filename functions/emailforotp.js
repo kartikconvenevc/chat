@@ -12,7 +12,7 @@ console.log("the api is get called :",req.body)
     secure: false, // true for 465, false for other ports
     auth: {
       user: "prasanna@convenevc.com", // generated ethereal user
-      pass: "Mukta@3511" // generated ethereal password
+      pass: "Vihaan@2024" // generated ethereal password
     }
   })
 
