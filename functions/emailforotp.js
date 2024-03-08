@@ -11,14 +11,14 @@ console.log("the api is get called :",req.body)
     port: 465,
     secure: true, // true for 465, false for other ports
     auth: {
-      user: "enquiry@coherentbs.com", // generated ethereal user
+      user: "hello@coherentbs.com", // generated ethereal user
       pass: "Chat@2024" // generated ethereal password
     }
   })
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: "enquiry@coherentbs.com", // sender address
+    from: "hello@coherentbs.com", // sender address
     to: "prasannajoshi3511@gmail.com", // list of receivers
     subject: "Email verification for Conevene Chat Application.", // Subject line
     text: `Hello world? `, // plain text body
