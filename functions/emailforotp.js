@@ -15,7 +15,7 @@ console.log("the api is get called :",req.body)
       pass: "Chat@2024" // generated ethereal password
     }
   })
-
+console.log(req.body.emailid,req.body.emailotp)
   // send mail with defined transport object
   let info = await transporter.sendMail({
     from: "hello@coherentbs.com", // sender address
