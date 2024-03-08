@@ -19,10 +19,10 @@ console.log("the api is get called :",req.body)
   // send mail with defined transport object
   let info = await transporter.sendMail({
     from: "hello@coherentbs.com", // sender address
-    to: "prasannajoshi3511@gmail.com", // list of receivers
+    to: req.body.emailid, // list of receivers
     subject: "Email verification for Conevene Chat Application.", // Subject line
     text: `Hello world? `, // plain text body
-    html: `<p>The otp for the verification is. Please enter this in app to verify.Thank you! </p>` // html body
+    html: `<p>The otp for the verification is <b>${req.body.emailotp} </b>. Please enter this in app to verify.Thank you! </p>` // html body
   })
 
   console.log("Message sent: %s", info.messageId)
