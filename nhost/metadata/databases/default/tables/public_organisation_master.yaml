@@ -6,9 +6,17 @@ insert_permissions:
     permission:
       check: {}
       columns:
+        - employee_count
         - id
+        - tax_number
+        - themes_id
+        - country
+        - enquired_by
         - location
+        - logo_file
         - name
+        - official_website
+        - status
         - subscription
     comment: ""
   - role: user
@@ -20,6 +28,7 @@ insert_permissions:
         - tax_number
         - themes_id
         - country
+        - enquired_by
         - location
         - logo_file
         - name
@@ -31,9 +40,17 @@ select_permissions:
   - role: public
     permission:
       columns:
+        - employee_count
         - id
+        - tax_number
+        - themes_id
+        - country
+        - enquired_by
         - location
+        - logo_file
         - name
+        - official_website
+        - status
         - subscription
       filter: {}
     comment: ""
@@ -45,6 +62,7 @@ select_permissions:
         - tax_number
         - themes_id
         - country
+        - enquired_by
         - location
         - logo_file
         - name
@@ -57,9 +75,17 @@ update_permissions:
   - role: public
     permission:
       columns:
+        - employee_count
         - id
+        - tax_number
+        - themes_id
+        - country
+        - enquired_by
         - location
+        - logo_file
         - name
+        - official_website
+        - status
         - subscription
       filter: {}
       check: {}
@@ -72,6 +98,7 @@ update_permissions:
         - tax_number
         - themes_id
         - country
+        - enquired_by
         - location
         - logo_file
         - name
