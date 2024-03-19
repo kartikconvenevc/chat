@@ -27,11 +27,14 @@ insert_permissions:
       columns:
         - id
         - orgn_id
+        - category
+        - description
         - groupname
         - groupprofile_img
         - last_messageingroup
         - status
         - type
+        - visibleto
         - created_at
         - created_user_id
         - personal_chatid
@@ -42,11 +45,14 @@ select_permissions:
       columns:
         - id
         - orgn_id
+        - category
+        - description
         - groupname
         - groupprofile_img
         - last_messageingroup
         - status
         - type
+        - visibleto
         - created_at
         - created_user_id
         - personal_chatid
@@ -58,11 +64,14 @@ update_permissions:
       columns:
         - id
         - orgn_id
+        - category
+        - description
         - groupname
         - groupprofile_img
         - last_messageingroup
         - status
         - type
+        - visibleto
         - created_at
         - created_user_id
         - personal_chatid
