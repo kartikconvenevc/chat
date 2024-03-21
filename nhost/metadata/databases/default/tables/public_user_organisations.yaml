@@ -11,7 +11,7 @@ object_relationships:
         remote_table:
           name: organisation_master
           schema: public
-  - name: userdata
+  - name: profiledata
     using:
       manual_configuration:
         column_mapping:
