@@ -47,6 +47,7 @@ select_permissions:
         - created_at
         - sent_id
       filter: {}
+      allow_aggregations: true
     comment: ""
 update_permissions:
   - role: user
