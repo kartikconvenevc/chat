@@ -57,6 +57,7 @@ select_permissions:
         - status
         - uuid
       filter: {}
+      allow_aggregations: true
     comment: ""
 update_permissions:
   - role: public
