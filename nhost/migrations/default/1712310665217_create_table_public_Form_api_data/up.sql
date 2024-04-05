@@ -1,0 +1,1 @@
+CREATE TABLE "public"."Form_api_data" ("id" bigserial NOT NULL, "created_user_id" uuid, "orgn_id" bigint, "Form_Name" text, "Form_data" jsonb, "Form_api" jsonb, "type" text, "status" text, PRIMARY KEY ("id") );

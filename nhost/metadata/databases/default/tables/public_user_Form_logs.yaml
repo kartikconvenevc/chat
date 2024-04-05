@@ -1,0 +1,78 @@
+table:
+  name: user_Form_logs
+  schema: public
+object_relationships:
+  - name: orgdata
+    using:
+      manual_configuration:
+        column_mapping:
+          orgn_id: id
+        insertion_order: null
+        remote_table:
+          name: organisation_master
+          schema: public
+insert_permissions:
+  - role: public
+    permission:
+      check: {}
+      columns:
+        - id
+        - orgn_id
+        - formdata
+        - formdata_senttime
+        - userid
+    comment: ""
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - id
+        - orgn_id
+        - formdata
+        - formdata_senttime
+        - userid
+    comment: ""
+select_permissions:
+  - role: public
+    permission:
+      columns:
+        - id
+        - orgn_id
+        - formdata
+        - formdata_senttime
+        - userid
+      filter: {}
+    comment: ""
+  - role: user
+    permission:
+      columns:
+        - id
+        - orgn_id
+        - formdata
+        - formdata_senttime
+        - userid
+      filter: {}
+    comment: ""
+update_permissions:
+  - role: public
+    permission:
+      columns:
+        - id
+        - orgn_id
+        - formdata
+        - formdata_senttime
+        - userid
+      filter: {}
+      check: {}
+    comment: ""
+  - role: user
+    permission:
+      columns:
+        - id
+        - orgn_id
+        - formdata
+        - formdata_senttime
+        - userid
+      filter: {}
+      check: {}
+    comment: ""
