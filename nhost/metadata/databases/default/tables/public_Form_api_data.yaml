@@ -2,6 +2,15 @@ table:
   name: Form_api_data
   schema: public
 object_relationships:
+  - name: groupdata
+    using:
+      manual_configuration:
+        column_mapping:
+          group_id: id
+        insertion_order: null
+        remote_table:
+          name: group_master
+          schema: public
   - name: orgdata
     using:
       manual_configuration:
@@ -16,6 +25,7 @@ insert_permissions:
     permission:
       check: {}
       columns:
+        - group_id
         - id
         - orgn_id
         - Form_api
@@ -29,6 +39,7 @@ insert_permissions:
     permission:
       check: {}
       columns:
+        - group_id
         - id
         - orgn_id
         - Form_api
@@ -42,6 +53,7 @@ select_permissions:
   - role: public
     permission:
       columns:
+        - group_id
         - id
         - orgn_id
         - Form_api
@@ -55,20 +67,22 @@ select_permissions:
   - role: user
     permission:
       columns:
-        - id
-        - orgn_id
+        - Form_Name
         - Form_api
         - Form_data
-        - Form_Name
+        - created_user_id
+        - group_id
+        - id
+        - orgn_id
         - status
         - type
-        - created_user_id
       filter: {}
     comment: ""
 update_permissions:
   - role: public
     permission:
       columns:
+        - group_id
         - id
         - orgn_id
         - Form_api
@@ -83,6 +97,7 @@ update_permissions:
   - role: user
     permission:
       columns:
+        - group_id
         - id
         - orgn_id
         - Form_api
