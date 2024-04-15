@@ -19,6 +19,7 @@ insert_permissions:
         - group_id
         - id
         - orgn_id
+        - group_role
         - status
         - type
         - userid
@@ -38,18 +39,21 @@ select_permissions:
     permission:
       columns:
         - group_id
+        - group_role
         - id
         - orgn_id
         - status
         - type
         - userid
       filter: {}
+      allow_aggregations: true
     comment: ""
 update_permissions:
   - role: user
     permission:
       columns:
         - group_id
+        - group_role
         - id
         - orgn_id
         - status
