@@ -10,6 +10,7 @@ insert_permissions:
         - id
         - tax_number
         - themes_id
+        - about_description
         - country
         - enquired_by
         - location
@@ -27,6 +28,7 @@ insert_permissions:
         - id
         - tax_number
         - themes_id
+        - about_description
         - country
         - enquired_by
         - location
@@ -61,6 +63,7 @@ select_permissions:
         - id
         - tax_number
         - themes_id
+        - about_description
         - country
         - enquired_by
         - location
@@ -79,6 +82,7 @@ update_permissions:
         - id
         - tax_number
         - themes_id
+        - about_description
         - country
         - enquired_by
         - location
@@ -97,6 +101,7 @@ update_permissions:
         - id
         - tax_number
         - themes_id
+        - about_description
         - country
         - enquired_by
         - location
