@@ -19,6 +19,7 @@ insert_permissions:
         - group_id
         - id
         - orgn_id
+        - background_image
         - group_role
         - status
         - type
@@ -31,7 +32,10 @@ select_permissions:
         - group_id
         - id
         - orgn_id
+        - background_image
+        - group_role
         - status
+        - type
         - userid
       filter: {}
     comment: ""
@@ -39,9 +43,10 @@ select_permissions:
     permission:
       columns:
         - group_id
-        - group_role
         - id
         - orgn_id
+        - background_image
+        - group_role
         - status
         - type
         - userid
@@ -53,9 +58,10 @@ update_permissions:
     permission:
       columns:
         - group_id
-        - group_role
         - id
         - orgn_id
+        - background_image
+        - group_role
         - status
         - type
         - userid
