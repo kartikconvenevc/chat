@@ -41,28 +41,31 @@ insert_permissions:
         - message_id
         - deleted
         - delivered
+        - message_sent_id
         - seen
     comment: ""
 select_permissions:
   - role: public
     permission:
       columns:
-        - deleted
-        - delivered
         - group_id
         - id
         - message_id
+        - deleted
+        - delivered
+        - message_sent_id
         - seen
       filter: {}
     comment: ""
   - role: user
     permission:
       columns:
-        - deleted
-        - delivered
         - group_id
         - id
         - message_id
+        - deleted
+        - delivered
+        - message_sent_id
         - seen
       filter: {}
     comment: ""
@@ -82,11 +85,12 @@ update_permissions:
   - role: user
     permission:
       columns:
-        - deleted
-        - delivered
         - group_id
         - id
         - message_id
+        - deleted
+        - delivered
+        - message_sent_id
         - seen
       filter: {}
       check: {}
