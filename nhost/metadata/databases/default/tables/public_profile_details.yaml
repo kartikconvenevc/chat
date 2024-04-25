@@ -50,23 +50,24 @@ insert_permissions:
     permission:
       check: {}
       columns:
+        - orgn_id
+        - id
+        - organisationid
+        - online_status
+        - birthday
+        - sdp_id
         - address1
         - address2
         - bio
-        - birthday
         - city
         - country
         - custom_username
         - first_name
-        - id
         - last_name
-        - organisationid
-        - orgn_id
         - phonenumber
         - postcode
         - role
         - sdp
-        - sdp_id
         - state
         - status
         - user_id
@@ -78,6 +79,7 @@ select_permissions:
         - orgn_id
         - id
         - organisationid
+        - online_status
         - birthday
         - sdp_id
         - address1
@@ -103,6 +105,7 @@ select_permissions:
         - orgn_id
         - id
         - organisationid
+        - online_status
         - birthday
         - sdp_id
         - address1
@@ -154,6 +157,7 @@ update_permissions:
         - orgn_id
         - id
         - organisationid
+        - online_status
         - birthday
         - sdp_id
         - address1
