@@ -11,6 +11,15 @@ object_relationships:
         remote_table:
           name: group_master
           schema: public
+  - name: usersdata
+    using:
+      manual_configuration:
+        column_mapping:
+          userid: user_id
+        insertion_order: null
+        remote_table:
+          name: profile_details
+          schema: public
 insert_permissions:
   - role: user
     permission:
