@@ -29,6 +29,7 @@ insert_permissions:
         - id
         - group_calling_status
         - action
+        - call_url_users
         - description
         - Group_calling_name
         - seen
@@ -47,6 +48,7 @@ select_permissions:
         - id
         - group_calling_status
         - action
+        - call_url_users
         - description
         - Group_calling_name
         - seen
@@ -65,6 +67,7 @@ select_permissions:
         - id
         - group_calling_status
         - action
+        - call_url_users
         - description
         - Group_calling_name
         - seen
@@ -84,6 +87,7 @@ update_permissions:
         - id
         - group_calling_status
         - action
+        - call_url_users
         - description
         - Group_calling_name
         - seen
