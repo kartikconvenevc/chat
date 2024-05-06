@@ -2,6 +2,15 @@ table:
   name: notification_master
   schema: public
 object_relationships:
+  - name: callgroupdetails
+    using:
+      manual_configuration:
+        column_mapping:
+          call_group_id: id
+        insertion_order: null
+        remote_table:
+          name: group_master
+          schema: public
   - name: userdata
     using:
       manual_configuration:
@@ -16,36 +25,54 @@ insert_permissions:
     permission:
       check: {}
       columns:
+        - call_group_id
         - id
+        - group_calling_status
         - action
         - description
+        - Group_calling_name
         - seen
         - title
+        - call_end_time
+        - call_start_time
         - created_at
+        - call_initiaed_by
         - userid
     comment: ""
 select_permissions:
   - role: public
     permission:
       columns:
+        - call_group_id
         - id
+        - group_calling_status
         - action
         - description
+        - Group_calling_name
         - seen
         - title
+        - call_end_time
+        - call_start_time
         - created_at
+        - call_initiaed_by
         - userid
       filter: {}
     comment: ""
   - role: user
     permission:
       columns:
+        - call_group_id
         - id
+        - group_calling_status
         - action
         - description
+        - Group_calling_name
         - seen
         - title
+        - call_end_time
+        - call_start_time
         - created_at
+        - call_initiaed_by
         - userid
       filter: {}
     comment: ""
@@ -53,12 +80,18 @@ update_permissions:
   - role: user
     permission:
       columns:
+        - call_group_id
         - id
+        - group_calling_status
         - action
         - description
+        - Group_calling_name
         - seen
         - title
+        - call_end_time
+        - call_start_time
         - created_at
+        - call_initiaed_by
         - userid
       filter: {}
       check: {}
