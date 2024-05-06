@@ -2,6 +2,15 @@ table:
   name: profile_details
   schema: public
 object_relationships:
+  - name: groupcalldetails
+    using:
+      manual_configuration:
+        column_mapping:
+          group_calling_id: id
+        insertion_order: null
+        remote_table:
+          name: group_master
+          schema: public
   - name: orgnisationdetail
     using:
       manual_configuration:
@@ -51,8 +60,10 @@ insert_permissions:
       check: {}
       columns:
         - orgn_id
+        - group_calling_id
         - id
         - organisationid
+        - group_calling_status
         - online_status
         - birthday
         - sdp_id
@@ -77,8 +88,10 @@ select_permissions:
     permission:
       columns:
         - orgn_id
+        - group_calling_id
         - id
         - organisationid
+        - group_calling_status
         - online_status
         - birthday
         - sdp_id
@@ -103,8 +116,10 @@ select_permissions:
     permission:
       columns:
         - orgn_id
+        - group_calling_id
         - id
         - organisationid
+        - group_calling_status
         - online_status
         - birthday
         - sdp_id
@@ -155,8 +170,10 @@ update_permissions:
     permission:
       columns:
         - orgn_id
+        - group_calling_id
         - id
         - organisationid
+        - group_calling_status
         - online_status
         - birthday
         - sdp_id
