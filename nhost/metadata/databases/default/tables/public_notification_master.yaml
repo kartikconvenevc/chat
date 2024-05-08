@@ -29,6 +29,7 @@ insert_permissions:
         - id
         - meeting_id
         - group_calling_status
+        - user_joined_status
         - action
         - call_url_users
         - description
@@ -49,6 +50,7 @@ select_permissions:
         - id
         - meeting_id
         - group_calling_status
+        - user_joined_status
         - action
         - call_url_users
         - description
@@ -69,6 +71,7 @@ select_permissions:
         - id
         - meeting_id
         - group_calling_status
+        - user_joined_status
         - action
         - call_url_users
         - description
@@ -90,6 +93,7 @@ update_permissions:
         - id
         - meeting_id
         - group_calling_status
+        - user_joined_status
         - action
         - call_url_users
         - description
