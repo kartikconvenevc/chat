@@ -28,6 +28,8 @@ insert_permissions:
         - group_id
         - id
         - orgn_id
+        - ticket_projectid
+        - ticket_userid
         - background_image
         - group_role
         - status
@@ -41,6 +43,8 @@ select_permissions:
         - group_id
         - id
         - orgn_id
+        - ticket_projectid
+        - ticket_userid
         - background_image
         - group_role
         - status
@@ -54,6 +58,8 @@ select_permissions:
         - group_id
         - id
         - orgn_id
+        - ticket_projectid
+        - ticket_userid
         - background_image
         - group_role
         - status
@@ -69,6 +75,8 @@ update_permissions:
         - group_id
         - id
         - orgn_id
+        - ticket_projectid
+        - ticket_userid
         - background_image
         - group_role
         - status
