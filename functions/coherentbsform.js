@@ -22,7 +22,7 @@ console.log("the api is get called :",req.body)
     to: "kartik@convenevc.com", // list of receivers
     subject: "New contact form has been Submitted", // Subject line
     text: `Hello world? `, // plain text body
-    html: `<p> Please Click on link to check details.Thank you! </p> <a href="https://cbswebsiteapi.convenevc.com/admin" /> ` // html body
+    html: `<p> Please Click on link to check details.Thank you! <a href="https://cbswebsiteapi.convenevc.com/admin"><P>Click here</P></a> </p> ` // html body
   })
 
   console.log("Message sent: %s", info.messageId)
