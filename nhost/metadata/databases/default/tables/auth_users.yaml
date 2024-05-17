@@ -182,6 +182,36 @@ insert_permissions:
         - id
     comment: ""
 select_permissions:
+  - role: public
+    permission:
+      columns:
+        - disabled
+        - email_verified
+        - is_anonymous
+        - phone_number_verified
+        - locale
+        - metadata
+        - active_mfa_type
+        - avatar_url
+        - default_role
+        - display_name
+        - otp_hash
+        - otp_method_last_used
+        - password_hash
+        - phone_number
+        - ticket
+        - totp_secret
+        - webauthn_current_challenge
+        - created_at
+        - last_seen
+        - otp_hash_expires_at
+        - ticket_expires_at
+        - updated_at
+        - email
+        - new_email
+        - id
+      filter: {}
+    comment: ""
   - role: user
     permission:
       columns:
@@ -213,6 +243,37 @@ select_permissions:
       filter: {}
     comment: ""
 update_permissions:
+  - role: public
+    permission:
+      columns:
+        - disabled
+        - email_verified
+        - is_anonymous
+        - phone_number_verified
+        - locale
+        - metadata
+        - active_mfa_type
+        - avatar_url
+        - default_role
+        - display_name
+        - otp_hash
+        - otp_method_last_used
+        - password_hash
+        - phone_number
+        - ticket
+        - totp_secret
+        - webauthn_current_challenge
+        - created_at
+        - last_seen
+        - otp_hash_expires_at
+        - ticket_expires_at
+        - updated_at
+        - email
+        - new_email
+        - id
+      filter: {}
+      check: {}
+    comment: ""
   - role: user
     permission:
       columns:
