@@ -21,6 +21,24 @@ object_relationships:
           name: profile_details
           schema: public
 insert_permissions:
+  - role: public
+    permission:
+      check: {}
+      columns:
+        - id
+        - orgn_id
+        - category
+        - description
+        - groupname
+        - groupprofile_img
+        - last_messageingroup
+        - status
+        - type
+        - visibleto
+        - created_at
+        - created_user_id
+        - personal_chatid
+    comment: ""
   - role: user
     permission:
       check: {}
@@ -77,6 +95,25 @@ select_permissions:
       filter: {}
     comment: ""
 update_permissions:
+  - role: public
+    permission:
+      columns:
+        - id
+        - orgn_id
+        - category
+        - description
+        - groupname
+        - groupprofile_img
+        - last_messageingroup
+        - status
+        - type
+        - visibleto
+        - created_at
+        - created_user_id
+        - personal_chatid
+      filter: {}
+      check: {}
+    comment: ""
   - role: user
     permission:
       columns:
