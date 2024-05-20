@@ -21,6 +21,21 @@ object_relationships:
           name: profile_details
           schema: public
 insert_permissions:
+  - role: public
+    permission:
+      check: {}
+      columns:
+        - group_id
+        - id
+        - orgn_id
+        - ticket_projectid
+        - ticket_userid
+        - background_image
+        - group_role
+        - status
+        - type
+        - userid
+    comment: ""
   - role: user
     permission:
       check: {}
@@ -69,6 +84,22 @@ select_permissions:
       allow_aggregations: true
     comment: ""
 update_permissions:
+  - role: public
+    permission:
+      columns:
+        - group_id
+        - id
+        - orgn_id
+        - ticket_projectid
+        - ticket_userid
+        - background_image
+        - group_role
+        - status
+        - type
+        - userid
+      filter: {}
+      check: {}
+    comment: ""
   - role: user
     permission:
       columns:

@@ -10,7 +10,9 @@ insert_permissions:
         - id
         - tax_number
         - themes_id
+        - ticketing_user_id
         - about_description
+        - category
         - country
         - enquired_by
         - location

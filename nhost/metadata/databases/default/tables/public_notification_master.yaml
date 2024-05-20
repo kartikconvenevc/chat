@@ -21,6 +21,27 @@ object_relationships:
           name: users
           schema: auth
 insert_permissions:
+  - role: public
+    permission:
+      check: {}
+      columns:
+        - call_group_id
+        - id
+        - meeting_id
+        - group_calling_status
+        - user_joined_status
+        - action
+        - call_url_users
+        - description
+        - Group_calling_name
+        - seen
+        - title
+        - call_end_time
+        - call_start_time
+        - created_at
+        - call_initiaed_by
+        - userid
+    comment: ""
   - role: user
     permission:
       check: {}
@@ -86,6 +107,28 @@ select_permissions:
       filter: {}
     comment: ""
 update_permissions:
+  - role: public
+    permission:
+      columns:
+        - call_group_id
+        - id
+        - meeting_id
+        - group_calling_status
+        - user_joined_status
+        - action
+        - call_url_users
+        - description
+        - Group_calling_name
+        - seen
+        - title
+        - call_end_time
+        - call_start_time
+        - created_at
+        - call_initiaed_by
+        - userid
+      filter: {}
+      check: {}
+    comment: ""
   - role: user
     permission:
       columns:

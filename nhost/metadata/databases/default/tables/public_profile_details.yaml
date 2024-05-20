@@ -34,23 +34,26 @@ insert_permissions:
     permission:
       check: {}
       columns:
+        - orgn_id
+        - group_calling_id
+        - id
+        - organisationid
+        - group_calling_status
+        - online_status
+        - birthday
+        - sdp_id
         - address1
         - address2
         - bio
-        - birthday
         - city
         - country
         - custom_username
         - first_name
-        - id
         - last_name
-        - organisationid
-        - orgn_id
         - phonenumber
         - postcode
         - role
         - sdp
-        - sdp_id
         - state
         - status
         - user_id

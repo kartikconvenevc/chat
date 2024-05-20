@@ -25,11 +25,12 @@ insert_permissions:
     permission:
       check: {}
       columns:
-        - deleted
-        - delivered
         - group_id
         - id
         - message_id
+        - deleted
+        - delivered
+        - message_sent_id
         - seen
     comment: ""
   - role: user
@@ -73,11 +74,12 @@ update_permissions:
   - role: public
     permission:
       columns:
-        - deleted
-        - delivered
         - group_id
         - id
         - message_id
+        - deleted
+        - delivered
+        - message_sent_id
         - seen
       filter: {}
       check: {}
