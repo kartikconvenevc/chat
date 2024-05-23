@@ -116,3 +116,8 @@ update_permissions:
       filter: {}
       check: {}
     comment: ""
+delete_permissions:
+  - role: public
+    permission:
+      filter: {}
+    comment: ""

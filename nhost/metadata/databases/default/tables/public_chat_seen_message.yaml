@@ -98,6 +98,10 @@ update_permissions:
       check: {}
     comment: ""
 delete_permissions:
+  - role: public
+    permission:
+      filter: {}
+    comment: ""
   - role: user
     permission:
       filter: {}
