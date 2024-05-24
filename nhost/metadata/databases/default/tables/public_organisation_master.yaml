@@ -11,6 +11,8 @@ insert_permissions:
         - tax_number
         - themes_id
         - ticketing_user_id
+        - convene_call_enable
+        - form_enable
         - about_description
         - category
         - country
@@ -31,6 +33,8 @@ insert_permissions:
         - tax_number
         - themes_id
         - ticketing_user_id
+        - convene_call_enable
+        - form_enable
         - about_description
         - category
         - country
@@ -51,6 +55,8 @@ select_permissions:
         - tax_number
         - themes_id
         - ticketing_user_id
+        - convene_call_enable
+        - form_enable
         - about_description
         - category
         - country
@@ -71,6 +77,8 @@ select_permissions:
         - tax_number
         - themes_id
         - ticketing_user_id
+        - convene_call_enable
+        - form_enable
         - about_description
         - category
         - country
@@ -91,7 +99,11 @@ update_permissions:
         - id
         - tax_number
         - themes_id
+        - ticketing_user_id
+        - convene_call_enable
+        - form_enable
         - about_description
+        - category
         - country
         - enquired_by
         - location
@@ -111,6 +123,8 @@ update_permissions:
         - tax_number
         - themes_id
         - ticketing_user_id
+        - convene_call_enable
+        - form_enable
         - about_description
         - category
         - country
